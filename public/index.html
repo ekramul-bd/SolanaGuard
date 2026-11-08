@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolanaGuard - Think Before You Sign</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">🛡️ SolanaGuard</div>
+        <div class="network">
+            <span class="dot"></span>
+            Solana Mainnet
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <p class="tagline">SOLANA WALLET SECURITY ANALYZER</p>
+            <h1>Think Before <span>You Sign.</span></h1>
+            <p class="subtitle">
+                Analyze wallet transactions and identify potential risk indicators.
+            </p>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="walletAddress"
+                    placeholder="Enter Solana wallet address..."
+                >
+                <button id="analyzeBtn">Analyze Wallet</button>
+            </div>
+
+            <p id="message"></p>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <p>Transactions Analyzed</p>
+                <h2 id="totalTransactions">—</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>High Risk</p>
+                <h2 id="highRisk">—</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Needs Review</p>
+                <h2 id="reviewRisk">—</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Low Risk</p>
+                <h2 id="lowRisk">—</h2>
+            </div>
+        </section>
+
+        <section class="transactions">
+            <h2>Recent Transactions</h2>
+            <div id="transactionList">
+                <p class="empty">Enter a wallet address to begin analysis.</p>
+            </div>
+        </section>
+
+        <footer>
+            SolanaGuard · Built for the Solana Hackathon
+            <p>Risk indicators are preliminary and do not guarantee wallet safety.</p>
+        </footer>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
